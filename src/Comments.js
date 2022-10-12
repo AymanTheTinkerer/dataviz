@@ -1,35 +1,37 @@
-import {leaning_df2, test} from './data.js';
+import {leaning_df, leaning_df2} from './data.js';
+import "./Comments.css"
+import * as d3 from 'd3'
 
-var i = 0;
+// d3.selectAll("td.red").style("background-color", function(d) {
+//     if (d === "R") {
+//         return "red";
+//     } else {
+//         return "blue";
+//     }
+// });
 
+//took help from https://www.c-sharpcorner.com/article/how-to-handle-conditional-styling-in-reactjs/ for conditional styling
 
-// export const Comments = () => {
-    // return (
-    //     <div className="comment-container">
-    //         {leaning_df2.map((key) => {
-    //             return (
-    //                 console.log(key[i].title),
-    //                 console.log(i),
-    //                 <div key={i}>
-    //                     {
-    //                         key[i++].comment
-    //                     }
-    //                 </div>
-    //             );
-    //         })}
-    //     </div>
-    // )
-// }
+const red = {
+    backgroundColor: 'red',
+    fontSize: '15px',
+}
+const blue = {
+    backgroundColor: 'blue',
+    fontSize: '15px',
+}
+
 
 export function Comments(){
-    console.log(leaning_df2)
+    // console.log(leaning_df2)
     const DisplayData=leaning_df2.map(
         (info)=>{
             return(
                 <tr>
                     <td>{info.title}</td>
                     <td>{info.comment}</td>
-                    <td>{info.author_leaning}</td>
+                    {/* <td className='red'>{info.author_leaning}</td> */}
+                    <td style={info.author_leaning==="R" ? red : blue}> {info.author_leaning} </td>
                 </tr>
             )
         }
@@ -46,10 +48,7 @@ export function Comments(){
                     </tr>
                 </thead>
                 <tbody>
-                 
-                    
                     {DisplayData}
-                    
                 </tbody>
             </table>
              
