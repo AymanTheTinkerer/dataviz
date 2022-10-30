@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/dataviz/static/css/main.17539a87.css",
+    "main.js": "/dataviz/static/js/main.53cc8d61.js",
+    "static/js/787.33a53b2b.chunk.js": "/dataviz/static/js/787.33a53b2b.chunk.js",
+    "static/media/logo.svg": "/dataviz/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/dataviz/index.html",
+    "main.17539a87.css.map": "/dataviz/static/css/main.17539a87.css.map",
+    "main.53cc8d61.js.map": "/dataviz/static/js/main.53cc8d61.js.map",
+    "787.33a53b2b.chunk.js.map": "/dataviz/static/js/787.33a53b2b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17539a87.css",
+    "static/js/main.53cc8d61.js"
+  ]
+}
