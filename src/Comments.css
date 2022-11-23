@@ -9,3 +9,9 @@
 h2 {
     color:white
 }
+
+table, th, td {
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
